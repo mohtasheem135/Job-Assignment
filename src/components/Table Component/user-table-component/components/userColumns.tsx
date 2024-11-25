@@ -3,9 +3,7 @@
 import { ColumnDef } from "@tanstack/react-table";
 import { Task } from "../data/schema";
 import { DataTableColumnHeader } from "./data-table-column-header";
-import { DataTableRowActions } from "./data-table-row-actions";
 import React from "react";
-import { useSelector } from "react-redux";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 

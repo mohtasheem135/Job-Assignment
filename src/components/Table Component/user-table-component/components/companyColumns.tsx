@@ -1,7 +1,7 @@
 "use client";
 
 import { ColumnDef } from "@tanstack/react-table";
-import { Task } from "../../company-table-component/data/schema";
+import { Task } from "@/components/Table Component/user-table-component/data/schema";
 // import { DataTableColumnHeader } from "../../company-table-component/components/data-table-column-header";
 import React from "react";
 import Image from "next/image";

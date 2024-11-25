@@ -26,12 +26,6 @@ import {
 } from "@/components/ui/table";
 
 import { DataTablePagination } from "./data-table-pagination";
-import { DataTableToolbar } from "./data-table-toolbar";
-// import logger from "@/libs/logger";
-// import { Separator } from "@/components/ui/separator";
-import { Button } from "@/components/ui/button";
-import { DropdownMenuSeparator } from "@/components/ui/dropdown-menu";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 interface DataTableProps<TData, TValue> {
@@ -78,7 +72,7 @@ export function DataTable<TData, TValue>({
 
   return (
     <div className="flex-col space-y-4">
-      <DataTableToolbar table={table} />
+      {/* <DataTableToolbar table={table} /> */}
       {/* <DropdownMenuSeparator className="h-1" /> */}
       <div className="rounded-md border-0">
         <Table>

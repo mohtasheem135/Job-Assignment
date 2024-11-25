@@ -2,7 +2,7 @@ import { DataTable } from "./components/data-table";
 import { userColumns } from "./components/userColumns";
 import { companyColumns } from "./components/companyColumns";
 
-const UserTableComponent = ({ data, name }: any) => {
+const UserTableComponent = ({ data, name }) => {
   return (
     <div>
       {name === "company" ? (

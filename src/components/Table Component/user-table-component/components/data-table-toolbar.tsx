@@ -1,25 +1,8 @@
 "use client";
 
-import { Cross2Icon } from "@radix-ui/react-icons";
 import { Table } from "@tanstack/react-table";
-
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-// import { DataTableViewOptions } from "@/app/(app)/examples/tasks/components/data-table-view-options"
-
-import {
-  // citys,
-  getCities,
-  getStates,
-  // locationType,
-  priorities,
-  // states,
-  statuses,
-} from "../data/data";
-import { DataTableFacetedFilter } from "./data-table-faceted-filter";
 import React from "react";
 import { DataTableViewOptions } from "./data-table-view-options";
-import { Calculator, Filter, Search } from "lucide-react";
 
 interface DataTableToolbarProps<TData> {
   table: Table<TData>;
@@ -28,7 +11,7 @@ interface DataTableToolbarProps<TData> {
 export function DataTableToolbar<TData>({
   table,
 }: DataTableToolbarProps<TData>) {
-  const isFiltered = table.getState().columnFilters.length > 0;
+  // const isFiltered = table.getState().columnFilters.length > 0;
 
   return (
     <div className="flex items-center justify-between pr-2">
@@ -61,13 +44,13 @@ export function DataTableToolbar<TData>({
             options={statuses}
           />
         )} */}
-        {table.getColumn("state") && (
+        {/* {table.getColumn("state") && (
           <DataTableFacetedFilter
             column={table.getColumn("state")}
             title="State"
             options={getStates()}
           />
-        )}
+        )} */}
         {/* {table.getColumn("priority") && (
           <DataTableFacetedFilter
             column={table.getColumn("priority")}
@@ -75,13 +58,13 @@ export function DataTableToolbar<TData>({
             options={priorities}
           />
         )} */}
-        {table.getColumn("city") && (
+        {/* {table.getColumn("city") && (
           <DataTableFacetedFilter
             column={table.getColumn("city")}
             title="City"
             options={getCities()}
           />
-        )}
+        )} */}
         {/* {table.getColumn("locationType") && (
           <DataTableFacetedFilter
             column={table.getColumn("locationType")}
@@ -89,7 +72,7 @@ export function DataTableToolbar<TData>({
             options={locationType}
           />
         )} */}
-        {isFiltered && (
+        {/* {isFiltered && (
           <Button
             variant="ghost"
             onClick={() => table.resetColumnFilters()}
@@ -98,7 +81,7 @@ export function DataTableToolbar<TData>({
             Reset
             <Cross2Icon className="ml-2 h-4 w-4" />
           </Button>
-        )}
+        )} */}
       </div>
       <DataTableViewOptions table={table} />
     </div>

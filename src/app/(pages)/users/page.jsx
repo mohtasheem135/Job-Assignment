@@ -1,15 +1,5 @@
 "use client";
 import { useSelector } from "react-redux";
-import {
-  Table,
-  TableBody,
-  TableCaption,
-  TableCell,
-  TableFooter,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
 import UserTableComponent from "@/components/Table Component/user-table-component/user-table-page";
 
 const Page = () => {

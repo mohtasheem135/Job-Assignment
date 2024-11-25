@@ -9,8 +9,6 @@ import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu"
 import React from "react"
 
@@ -25,7 +23,7 @@ export function DataTableViewOptions<TData>({
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
-          variant="ghost2"
+          variant="ghost"
           size="sm"
           className="ml-auto border-2 border-cz-black hidden h-8 lg:flex"
         >
