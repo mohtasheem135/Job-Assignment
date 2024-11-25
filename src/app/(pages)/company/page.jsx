@@ -1,16 +1,17 @@
 "use client"
+// import CompanyTableComponent from '@/components/Table Component/company-table-component/company-table-page';
+import UserTableComponent from '@/components/Table Component/user-table-component/user-table-page';
 import { useSelector } from 'react-redux';
 
 
 const Page = () => {
 
     const companyList = useSelector((state) => state.company)?.companys;
-  console.log("XXXXXXXXXXX- COMPANYYYYYYYYYYYYYYYYY ", companyList)
 
 
   return (
-    <div>
-      This is Company Page - {companyList.length}
+    <div className="overflow-hidden ">
+      <UserTableComponent name="company" data={companyList} />
     </div>
   )
 }
