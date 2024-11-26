@@ -87,25 +87,25 @@ export const userColumns: ColumnDef<Task>[] = [
       return value.includes(row.getValue(id));
     },
   },
-  {
-    accessorKey: "currency",
-    header: ({ column }) => (
-      <DataTableColumnHeader column={column} title="Currency" />
-    ),
-    cell: ({ row }) => {
-      if (!row.getValue("currency")) {
-        return <span>INR</span>;
-      }
-      return (
-        <div className="flex w-[150px] items-center cursor-default">
-          <span>{row.getValue("currency")}</span>
-        </div>
-      );
-    },
-    filterFn: (row, id, value) => {
-      return value.includes(row.getValue(id));
-    },
-  },
+  // {
+  //   accessorKey: "currency",
+  //   header: ({ column }) => (
+  //     <DataTableColumnHeader column={column} title="Currency" />
+  //   ),
+  //   cell: ({ row }) => {
+  //     if (!row.getValue("currency")) {
+  //       return <span>INR</span>;
+  //     }
+  //     return (
+  //       <div className="flex w-[150px] items-center cursor-default">
+  //         <span>{row.getValue("currency")}</span>
+  //       </div>
+  //     );
+  //   },
+  //   filterFn: (row, id, value) => {
+  //     return value.includes(row.getValue(id));
+  //   },
+  // },
   {
     accessorKey: "isActive",
     header: ({ column }) => (

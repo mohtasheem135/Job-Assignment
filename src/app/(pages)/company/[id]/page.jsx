@@ -33,22 +33,20 @@ const Page = () => {
 
   const companyData = companyList[extractId(id)];
 
-  console.log("XXXXXX company ", companyData, " ---- ", extractId(id));
-
   const handleImageError = () => {
     setImageSrc("/profile.jpg");
   };
 
   return (
-    <div className="pr-2">
+    <div className="sm:pr-2 px-2 py-2">
       <Card className="border-t-4 border-green-400">
         <CardHeader>
           <CardTitle>{companyData?.companyName}</CardTitle>
         </CardHeader>
         <CardContent>
           <div>
-            <div className="flex">
-              <div className="w-1/2">
+            <div className="sm:flex">
+              <div className="sm:w-1/2">
                 <div className="flex items-center">
                   <Image
                     src="/company.jpg"
@@ -60,9 +58,10 @@ const Page = () => {
                     className=""
                   />
                   <div className="ml-5">
-                    <p className="p-1 flex items-center">
-                      <Mail className="pr-2 " size={34} /> {companyData?.email}
-                    </p>
+                  <p className="p-1 flex items-center overflow-y-scroll text-ellipsis whitespace-nowrap">
+  <Mail className="pr-2" size={34} />
+  {companyData?.email}
+</p>
                     <p className="p-1 flex items-center">
                       <Phone className="pr-2 " size={34} />
                       {companyData?.mobileNumber}

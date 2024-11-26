@@ -21,8 +21,8 @@ export default function Home() {
   // console.log("XXXXXXXX company ", companys)
 
   return (
-    <div className="flex justify-center items-center">
-      <Card className="w-[250px] mt-[200px]">
+    <div className="flex-col sm:flex justify-center items-center">
+      <Card className="w-[250px] ml-[80px] mt-[150px] sm:mt-[200px]">
         <CardHeader>
           <CardTitle>
             <span className="flex items-center cursor-default">
@@ -42,7 +42,7 @@ export default function Home() {
           </div>
         </CardContent>
       </Card>
-      <Card className="w-[250px] ml-[100px] mt-[200px]">
+      <Card className="w-[250px] ml-[80px] sm:ml-[100px] mt-[50px] sm:mt-[200px]">
         <CardHeader>
           <CardTitle>
             <span className="flex items-center cursor-default">

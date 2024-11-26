@@ -31,15 +31,15 @@ const Page = () => {
   };
 
   return (
-    <div className="pr-2">
+    <div className="sm:pr-2 px-2 py-2">
       <Card className="border-t-4 border-green-400">
         <CardHeader>
-          <CardTitle>{userData?.name}</CardTitle>
+          <CardTitle className="mt-[10px]">{userData?.name}</CardTitle>
         </CardHeader>
         <CardContent>
           <div>
-            <div className="flex">
-              <div className="w-1/2">
+            <div className="sm:flex">
+              <div className="sm:w-1/2">
                 <div className="flex items-center">
                   <Image
                     src="/profile.jpg"
@@ -61,7 +61,7 @@ const Page = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-1/2 flex items-center">
+              <div className="mt-[40px] sm:mt-0 sm:w-1/2 flex items-center">
                 <span className="flex items-center">
                   <History size={30} className="text-gray-500" />
                   <span className="ml-2">
@@ -82,7 +82,7 @@ const Page = () => {
               </div>
             </div>
             <div className="mt-10 flex">
-              <div className="w-1/2">
+              <div className="w-1/2 border-r-2">
                 <span className="">
                   <p className="flex items-center">
                     <CalendarDays className="pr-2 " size={34} />
@@ -91,7 +91,7 @@ const Page = () => {
                   <p className="pt-2">{convertToIST(userData?.createdAt)}</p>
                 </span>
               </div>
-              <div className="w-1/2">
+              <div className="w-1/2 pl-[20px]">
                 <span className="">
                   <p className="flex items-center">
                     <ReceiptIndianRupee className="pr-2 " size={34} />
@@ -108,7 +108,7 @@ const Page = () => {
         <CardContent>
           <div>
             <div className="flex mt-5">
-              <div className="w-1/2">
+              <div className="w-1/2 border-r-2">
                 <span className="">
                   <p className="flex items-center">
                     <Building2 className="pr-2 " size={34} />
@@ -119,7 +119,7 @@ const Page = () => {
                   </p>
                 </span>
               </div>
-              <div className="w-1/2">
+              <div className="w-1/2 pl-[20px]">
                 <span className="">
                   <p className="flex items-center">
                     <MapPin className="pr-2 " size={34} />
