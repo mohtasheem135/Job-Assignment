@@ -17,11 +17,8 @@ export default function Home() {
   dispatch(setUsers(users));
   dispatch(setCompanys(companys));
 
-  // console.log("XXXXXXXX users ", users)
-  // console.log("XXXXXXXX company ", companys)
-
   return (
-    <div className="flex-col sm:flex justify-center items-center">
+    <div className="flex-col sm:flex sm:flex-row justify-center items-center">
       <Card className="w-[250px] ml-[80px] mt-[150px] sm:mt-[200px]">
         <CardHeader>
           <CardTitle>
