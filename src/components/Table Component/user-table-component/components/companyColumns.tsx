@@ -15,8 +15,14 @@ export const companyColumns: ColumnDef<Task>[] = [
         return <span>Logo</span>;
       }
       return (
-        <div className="flex w-[30px] items-center cursor-default">
-          <Image width={20} height={20} src={row.getValue("logo")} alt="logo" />
+        <div className="flex w-[50px] items-center cursor-default">
+          <Image
+            width={120}
+            height={120}
+            src="/company.jpg"
+            // src={row.getValue("logo")}
+            alt="logo"
+          />
         </div>
       );
     },

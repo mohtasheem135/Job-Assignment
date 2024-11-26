@@ -17,9 +17,10 @@ export const userColumns: ColumnDef<Task>[] = [
       return (
         <div className="flex w-[30px] items-center cursor-default">
           <Image
-            width={20}
-            height={20}
-            src={row.getValue("avatar")}
+            width={80}
+            height={80}
+            // src={row.getValue("avatar")}
+            src="/profile.jpg"
             alt="avatar"
           />
         </div>
@@ -113,7 +114,7 @@ export const userColumns: ColumnDef<Task>[] = [
     cell: ({ row }) => {
       return (
         <div className="flex w-[150px] items-center">
-          <Badge className="cursor-default w-[85px] flex justify-center">
+          <Badge className={`cursor-default w-[85px] flex justify-center opacity-80 text-black font-normal ${row.getValue("isActive") ? "bg-green-300" : "bg-red-300"}`}>
             <span>{row.getValue("isActive") ? "Active" : "Not Active"}</span>
           </Badge>
         </div>

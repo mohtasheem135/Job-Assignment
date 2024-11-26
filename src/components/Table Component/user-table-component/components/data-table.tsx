@@ -109,7 +109,7 @@ export function DataTable<TData, TValue>({
                     {row.getVisibleCells().map((cell) => (
                       <>
                         <TableCell
-                          className="bg-cz-black first:rounded-l-md p-3 cursor-pointer"
+                          className="bg-cz-black first:rounded-l-md p-2 cursor-pointer"
                           key={cell.id}
                           onClick={()=> router.push(`${name}/${ cell.id}`)}
                         >
