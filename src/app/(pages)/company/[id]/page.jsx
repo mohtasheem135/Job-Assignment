@@ -58,10 +58,10 @@ const Page = () => {
                     className=""
                   />
                   <div className="ml-5">
-                  <p className="p-1 flex items-center overflow-y-scroll text-ellipsis whitespace-nowrap">
-  <Mail className="pr-2" size={34} />
-  {companyData?.email}
-</p>
+                    <p className="p-1 flex w-[220px] items-center overflow-y-scroll text-ellipsis whitespace-nowrap">
+                      <Mail className="pr-2" size={34} />
+                      {companyData?.email}
+                    </p>
                     <p className="p-1 flex items-center">
                       <Phone className="pr-2 " size={34} />
                       {companyData?.mobileNumber}
@@ -208,9 +208,13 @@ const Page = () => {
                               <p>
                                 <b>Status: </b>
                                 {companyData?.isActive ? (
-                                  <Badge className="bg-green-300 text-black font-normal opacity-80">Active</Badge>
+                                  <Badge className="bg-green-300 text-black font-normal opacity-80">
+                                    Active
+                                  </Badge>
                                 ) : (
-                                  <Badge className="bg-red-300 text-black font-normal opacity-80">Inactive</Badge>
+                                  <Badge className="bg-red-300 text-black font-normal opacity-80">
+                                    Inactive
+                                  </Badge>
                                 )}
                               </p>
                             </div>
@@ -218,9 +222,7 @@ const Page = () => {
                         </HoverCardContent>
                       </HoverCard>
                     ) : (
-                      <p className="pt-2 cursor-pointer">
-                        {companyData?.name}
-                      </p>
+                      <p className="pt-2 cursor-pointer">{companyData?.name}</p>
                     )}
                   </span>
                 </div>
