@@ -16,7 +16,7 @@ import { useParams } from "next/navigation";
 import { useSelector } from "react-redux";
 import { convertToIST } from "@/utils/utility";
 
-const page = () => {
+const Page = () => {
   const usersList = useSelector((state) => state.user)?.users;
   const { id } = useParams();
 
@@ -138,4 +138,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

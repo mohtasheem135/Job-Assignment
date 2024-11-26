@@ -42,12 +42,6 @@ const items = [
 export function AppSidebar() {
   const {
     state,
-    open,
-    setOpen,
-    openMobile,
-    setOpenMobile,
-    isMobile,
-    toggleSidebar,
   } = useSidebar();
 
   return (

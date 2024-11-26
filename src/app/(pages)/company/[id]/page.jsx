@@ -5,7 +5,6 @@ import { useSelector } from "react-redux";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
-  Building2,
   CalendarDays,
   FileDigit,
   History,
@@ -13,7 +12,6 @@ import {
   MapPin,
   NotebookTabs,
   Phone,
-  ReceiptIndianRupee,
   User,
   Wallet,
 } from "lucide-react";
@@ -25,7 +23,7 @@ import {
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
 
-const page = () => {
+const Page = () => {
   const companyList = useSelector((state) => state.company)?.companys;
   const { id } = useParams();
 
@@ -236,4 +234,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
